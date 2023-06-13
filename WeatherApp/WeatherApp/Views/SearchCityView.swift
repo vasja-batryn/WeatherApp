@@ -15,13 +15,14 @@ struct SearchCityView: View {
         HStack {
             Button {
                 weatherViewModel.getCurrentLocationWeather()
+                startCity = weatherViewModel.city
             } label: {
                 Image(systemName: "location")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
             }
-            
+
             Spacer()
 
             TextField("", text: $startCity)
@@ -30,7 +31,7 @@ struct SearchCityView: View {
                 .multilineTextAlignment(.center)
 
             Spacer()
-            
+
             Button {
                 weatherViewModel.city = startCity
             } label: {

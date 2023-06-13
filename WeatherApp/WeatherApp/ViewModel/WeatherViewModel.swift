@@ -21,7 +21,8 @@ final class WeatherViewModel: ObservableObject {
     }
 
     private func getLocation() {
-        CLGeocoder().geocodeAddressString(city) { placemarks, _ in
+        CLGeocoder().geocodeAddressString(city) { [weak self] placemarks, _ in
+            guard let self = self else { return }
             if let places = placemarks,
                let place = places.first
             {
@@ -29,27 +30,31 @@ final class WeatherViewModel: ObservableObject {
             }
         }
     }
-    
+
     func getCurrentLocationWeather() {
         let locationManager = CLLocationManager()
 
         if locationManager.authorizationStatus == .authorizedWhenInUse {
             guard let currentLocation = locationManager.location else {
-                
                 return
             }
-            
+
             let latitude = currentLocation.coordinate.latitude
             let longitude = currentLocation.coordinate.longitude
-            let urlString = WeatherApi.getCurrentWeatherURL(latitude: latitude, longitude: longitude)
-            
-            getWeatherInternal(city: "Current Location", for: urlString)
+
+            CLGeocoder().reverseGeocodeLocation(currentLocation) { [weak self] placemarks, _ in
+                guard let self = self, let placemark = placemarks?.first, let city = placemark.locality else {
+                    return
+                }
+
+                let urlString = WeatherApi.getCurrentWeatherURL(latitude: latitude, longitude: longitude)
+                self.city = city
+                self.getWeatherInternal(city: city, for: urlString)
+            }
         } else {
             locationManager.requestWhenInUseAuthorization()
         }
     }
-
-
 
     private func getWeather(coord: CLLocationCoordinate2D?) {
         var urlString = ""
@@ -65,12 +70,12 @@ final class WeatherViewModel: ObservableObject {
         guard let url = URL(string: urlString) else { return }
         NetworkManager<WeatherResponse>.fetchWeather(for: url) { result in
             switch result {
-                case .success(let response):
-                    DispatchQueue.main.async {
-                        self.weather = response
-                    }
-                case .failure(let error):
-                    print(error)
+            case .success(let response):
+                DispatchQueue.main.async {
+                    self.weather = response
+                }
+            case .failure(let error):
+                print(error)
             }
         }
     }
@@ -121,44 +126,44 @@ final class WeatherViewModel: ObservableObject {
 
     func getWeatherIconFor(icon: String) -> Image {
         switch icon {
-            case "01d":
-                return Image.clearSky
-            case "01n":
-                return Image.clearSkyNight
-            case "02d":
-                return Image.fewClouds
-            case "02n":
-                return Image.fewCloudsNight
-            case "03d":
-                return Image.scatteredClouds
-            case "03n":
-                return Image.scatteredClouds
-            case "04d":
-                return Image.brokenClouds
-            case "04n":
-                return Image.brokenClouds
-            case "09d":
-                return Image.showerRain
-            case "09n":
-                return Image.showerRain
-            case "10d":
-                return Image.rain
-            case "10n":
-                return Image.rainNight
-            case "11d":
-                return Image.thunderstorm
-            case "11n":
-                return Image.thunderstorm
-            case "13d":
-                return Image.snow
-            case "13n":
-                return Image.snow
-            case "50d":
-                return Image.mist
-            case "50n":
-                return Image.mist
-            default:
-                return Image.clearSky
+        case "01d":
+            return Image.clearSky
+        case "01n":
+            return Image.clearSkyNight
+        case "02d":
+            return Image.fewClouds
+        case "02n":
+            return Image.fewCloudsNight
+        case "03d":
+            return Image.scatteredClouds
+        case "03n":
+            return Image.scatteredClouds
+        case "04d":
+            return Image.brokenClouds
+        case "04n":
+            return Image.brokenClouds
+        case "09d":
+            return Image.showerRain
+        case "09n":
+            return Image.showerRain
+        case "10d":
+            return Image.rain
+        case "10n":
+            return Image.rainNight
+        case "11d":
+            return Image.thunderstorm
+        case "11n":
+            return Image.thunderstorm
+        case "13d":
+            return Image.snow
+        case "13n":
+            return Image.snow
+        case "50d":
+            return Image.mist
+        case "50n":
+            return Image.mist
+        default:
+            return Image.clearSky
         }
     }
 }
