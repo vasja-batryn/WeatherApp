@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6522CE922A3512DE002E1580 /* URWDIN-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6522CE8A2A3512DE002E1580 /* URWDIN-Regular.ttf */; };
-		6522CE932A3512DE002E1580 /* URWDIN-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6522CE8B2A3512DE002E1580 /* URWDIN-Medium.ttf */; };
-		6522CE942A3512DE002E1580 /* URWDIN-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6522CE8C2A3512DE002E1580 /* URWDIN-Light.ttf */; };
-		6522CE952A3512DE002E1580 /* URWDIN-XLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6522CE8D2A3512DE002E1580 /* URWDIN-XLight.ttf */; };
-		6522CE962A3512DE002E1580 /* URWDIN-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6522CE8E2A3512DE002E1580 /* URWDIN-Black.ttf */; };
-		6522CE972A3512DE002E1580 /* URWDIN-Demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6522CE8F2A3512DE002E1580 /* URWDIN-Demi.ttf */; };
-		6522CE982A3512DE002E1580 /* URWDIN-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6522CE902A3512DE002E1580 /* URWDIN-Bold.ttf */; };
-		6522CE992A3512DE002E1580 /* URWDIN-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6522CE912A3512DE002E1580 /* URWDIN-Thin.ttf */; };
 		65E327F62A33622300B60CDB /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E327F52A33622300B60CDB /* WeatherAppApp.swift */; };
 		65E327F82A33622300B60CDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E327F72A33622300B60CDB /* ContentView.swift */; };
 		65E327FA2A33622400B60CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E327F92A33622400B60CDB /* Assets.xcassets */; };
 		65E327FD2A33622400B60CDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E327FC2A33622400B60CDB /* Preview Assets.xcassets */; };
+		65E9F8232A38657500E54BB1 /* URWDIN-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E9F81B2A38657500E54BB1 /* URWDIN-Regular.ttf */; };
+		65E9F8242A38657500E54BB1 /* URWDIN-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E9F81C2A38657500E54BB1 /* URWDIN-Bold.ttf */; };
+		65E9F8252A38657500E54BB1 /* URWDIN-Demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E9F81D2A38657500E54BB1 /* URWDIN-Demi.ttf */; };
+		65E9F8262A38657500E54BB1 /* URWDIN-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E9F81E2A38657500E54BB1 /* URWDIN-Black.ttf */; };
+		65E9F8272A38657500E54BB1 /* URWDIN-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E9F81F2A38657500E54BB1 /* URWDIN-Light.ttf */; };
+		65E9F8282A38657500E54BB1 /* URWDIN-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E9F8202A38657500E54BB1 /* URWDIN-Medium.ttf */; };
+		65E9F8292A38657500E54BB1 /* URWDIN-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E9F8212A38657500E54BB1 /* URWDIN-Thin.ttf */; };
+		65E9F82A2A38657500E54BB1 /* URWDIN-XLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E9F8222A38657500E54BB1 /* URWDIN-XLight.ttf */; };
 		65FD49B42A336F290028B9DB /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD49B32A336F290028B9DB /* Color+Ext.swift */; };
 		65FD49B62A336F330028B9DB /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD49B52A336F330028B9DB /* UIColor+Ext.swift */; };
 		65FD49B82A336F490028B9DB /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD49B72A336F490028B9DB /* Font+Ext.swift */; };
@@ -37,19 +37,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6522CE8A2A3512DE002E1580 /* URWDIN-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "URWDIN-Regular.ttf"; path = "../../../../../../../../Downloads/font/URWDIN-Regular.ttf"; sourceTree = "<group>"; };
-		6522CE8B2A3512DE002E1580 /* URWDIN-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "URWDIN-Medium.ttf"; path = "../../../../../../../../Downloads/font/URWDIN-Medium.ttf"; sourceTree = "<group>"; };
-		6522CE8C2A3512DE002E1580 /* URWDIN-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "URWDIN-Light.ttf"; path = "../../../../../../../../Downloads/font/URWDIN-Light.ttf"; sourceTree = "<group>"; };
-		6522CE8D2A3512DE002E1580 /* URWDIN-XLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "URWDIN-XLight.ttf"; path = "../../../../../../../../Downloads/font/URWDIN-XLight.ttf"; sourceTree = "<group>"; };
-		6522CE8E2A3512DE002E1580 /* URWDIN-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "URWDIN-Black.ttf"; path = "../../../../../../../../Downloads/font/URWDIN-Black.ttf"; sourceTree = "<group>"; };
-		6522CE8F2A3512DE002E1580 /* URWDIN-Demi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "URWDIN-Demi.ttf"; path = "../../../../../../../../Downloads/font/URWDIN-Demi.ttf"; sourceTree = "<group>"; };
-		6522CE902A3512DE002E1580 /* URWDIN-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "URWDIN-Bold.ttf"; path = "../../../../../../../../Downloads/font/URWDIN-Bold.ttf"; sourceTree = "<group>"; };
-		6522CE912A3512DE002E1580 /* URWDIN-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "URWDIN-Thin.ttf"; path = "../../../../../../../../Downloads/font/URWDIN-Thin.ttf"; sourceTree = "<group>"; };
 		65E327F22A33622300B60CDB /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E327F52A33622300B60CDB /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
 		65E327F72A33622300B60CDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65E327F92A33622400B60CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E327FC2A33622400B60CDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65E9F81B2A38657500E54BB1 /* URWDIN-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "URWDIN-Regular.ttf"; sourceTree = "<group>"; };
+		65E9F81C2A38657500E54BB1 /* URWDIN-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "URWDIN-Bold.ttf"; sourceTree = "<group>"; };
+		65E9F81D2A38657500E54BB1 /* URWDIN-Demi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "URWDIN-Demi.ttf"; sourceTree = "<group>"; };
+		65E9F81E2A38657500E54BB1 /* URWDIN-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "URWDIN-Black.ttf"; sourceTree = "<group>"; };
+		65E9F81F2A38657500E54BB1 /* URWDIN-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "URWDIN-Light.ttf"; sourceTree = "<group>"; };
+		65E9F8202A38657500E54BB1 /* URWDIN-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "URWDIN-Medium.ttf"; sourceTree = "<group>"; };
+		65E9F8212A38657500E54BB1 /* URWDIN-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "URWDIN-Thin.ttf"; sourceTree = "<group>"; };
+		65E9F8222A38657500E54BB1 /* URWDIN-XLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "URWDIN-XLight.ttf"; sourceTree = "<group>"; };
 		65FD49B22A336C620028B9DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		65FD49B32A336F290028B9DB /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		65FD49B52A336F330028B9DB /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
@@ -119,6 +119,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		65E9F81A2A38653A00E54BB1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				65E9F81E2A38657500E54BB1 /* URWDIN-Black.ttf */,
+				65E9F81C2A38657500E54BB1 /* URWDIN-Bold.ttf */,
+				65E9F81D2A38657500E54BB1 /* URWDIN-Demi.ttf */,
+				65E9F81F2A38657500E54BB1 /* URWDIN-Light.ttf */,
+				65E9F8202A38657500E54BB1 /* URWDIN-Medium.ttf */,
+				65E9F81B2A38657500E54BB1 /* URWDIN-Regular.ttf */,
+				65E9F8212A38657500E54BB1 /* URWDIN-Thin.ttf */,
+				65E9F8222A38657500E54BB1 /* URWDIN-XLight.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		65FD49982A3362650028B9DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +167,7 @@
 		65FD499B2A3362AF0028B9DB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				65FD49A12A336B750028B9DB /* Fonts */,
+				65E9F81A2A38653A00E54BB1 /* Fonts */,
 				65E327F92A33622400B60CDB /* Assets.xcassets */,
 				65FD49C02A337EEB0028B9DB /* Constants.swift */,
 			);
@@ -185,21 +200,6 @@
 				65FD49BB2A336F890028B9DB /* Image+Ext.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		65FD49A12A336B750028B9DB /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				6522CE8E2A3512DE002E1580 /* URWDIN-Black.ttf */,
-				6522CE902A3512DE002E1580 /* URWDIN-Bold.ttf */,
-				6522CE8F2A3512DE002E1580 /* URWDIN-Demi.ttf */,
-				6522CE8C2A3512DE002E1580 /* URWDIN-Light.ttf */,
-				6522CE8B2A3512DE002E1580 /* URWDIN-Medium.ttf */,
-				6522CE8A2A3512DE002E1580 /* URWDIN-Regular.ttf */,
-				6522CE912A3512DE002E1580 /* URWDIN-Thin.ttf */,
-				6522CE8D2A3512DE002E1580 /* URWDIN-XLight.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,16 +260,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6522CE992A3512DE002E1580 /* URWDIN-Thin.ttf in Resources */,
-				6522CE942A3512DE002E1580 /* URWDIN-Light.ttf in Resources */,
-				6522CE972A3512DE002E1580 /* URWDIN-Demi.ttf in Resources */,
-				6522CE982A3512DE002E1580 /* URWDIN-Bold.ttf in Resources */,
+				65E9F82A2A38657500E54BB1 /* URWDIN-XLight.ttf in Resources */,
+				65E9F8262A38657500E54BB1 /* URWDIN-Black.ttf in Resources */,
+				65E9F8282A38657500E54BB1 /* URWDIN-Medium.ttf in Resources */,
+				65E9F8232A38657500E54BB1 /* URWDIN-Regular.ttf in Resources */,
 				65E327FD2A33622400B60CDB /* Preview Assets.xcassets in Resources */,
-				6522CE952A3512DE002E1580 /* URWDIN-XLight.ttf in Resources */,
-				6522CE922A3512DE002E1580 /* URWDIN-Regular.ttf in Resources */,
+				65E9F8242A38657500E54BB1 /* URWDIN-Bold.ttf in Resources */,
 				65E327FA2A33622400B60CDB /* Assets.xcassets in Resources */,
-				6522CE932A3512DE002E1580 /* URWDIN-Medium.ttf in Resources */,
-				6522CE962A3512DE002E1580 /* URWDIN-Black.ttf in Resources */,
+				65E9F8252A38657500E54BB1 /* URWDIN-Demi.ttf in Resources */,
+				65E9F8272A38657500E54BB1 /* URWDIN-Light.ttf in Resources */,
+				65E9F8292A38657500E54BB1 /* URWDIN-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
